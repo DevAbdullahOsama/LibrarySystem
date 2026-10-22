@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LibrarySystem.Models.Enums
 {
-    internal enum CopyStatus
+    public enum CopyStatus
     {
         Available,
         Borrowed,

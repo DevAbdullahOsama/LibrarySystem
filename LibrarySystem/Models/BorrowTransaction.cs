@@ -16,14 +16,14 @@ namespace LibrarySystem.Models
             DueDate= DateOnly.FromDateTime(DateTime.Today).AddDays(loanPeriodDays);
         }
 
-        private static int Counter { get; set; }
+        private static int Counter = 1000;
         protected const decimal FinePerDay = 10m;
-        public int TransactionId { get; set; }
-        public Member Member { get; set; }
-        public BookCopy BookCopy { get; set; }
-        public DateOnly BorrowDate { get; set; }
-        public DateOnly DueDate { get; set; }
-        public DateOnly? ReturnDate { get; set; }
+        public int TransactionId { get; private set; }
+        public Member Member { get; private set; }
+        public BookCopy BookCopy { get; private set; }
+        public DateOnly BorrowDate { get; private set; }
+        public DateOnly DueDate { get; private set; }
+        public DateOnly? ReturnDate { get; private set; }
 
         public bool IsReturned => ReturnDate.HasValue;
         public decimal CalculateFine()
