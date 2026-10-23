@@ -6,7 +6,7 @@ using System.Text;
 
 namespace LibrarySystem.Models
 {
-    public class BookCopy : IDisplayable
+    public class BookCopy : IDisplayable, IBorrowable
     {
         public string CopyId { get; private set; } = null!;
         public string Condition { get; private set; } = null!;
