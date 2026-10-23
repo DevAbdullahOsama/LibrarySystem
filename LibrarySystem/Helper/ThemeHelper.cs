@@ -18,7 +18,7 @@ namespace LibrarySystem.Helper
             Console.ForegroundColor = ConsoleColor.DarkCyan;
 
             int width = 40;
-            int sideWidth = (width - title.Length - 2) / 2;
+            int sideWidth = Math.Max(0, (width - title.Length - 2) / 2);
 
             string side = new('─', sideWidth);
 
@@ -60,7 +60,7 @@ namespace LibrarySystem.Helper
             do
             {
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
-                Console.Write($"\nEnter {label} : ");
+                Console.Write($"\nEnter {label}");
 
                 Console.ForegroundColor = ConsoleColor.Green;
                 value = Console.ReadLine()?.Trim();

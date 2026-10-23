@@ -20,7 +20,7 @@ namespace LibrarySystem.Models
 
         public override string Display()
         {
-            return $"Librarian ID: {LibrarianId},\n Name: {Name},\n Salary: {Salary},\n Phone: {Phone},\n Hire Date: {HireDate}";
+            return $"Librarian ID: {LibrarianId},\nName: {Name},\nSalary: {Salary},\nPhone: {Phone},Hire Date: {HireDate}";
         }
     }
 }

@@ -90,7 +90,7 @@ namespace LibrarySystem.Models
         }
         public string Display()
         {
-            return $"Branch ID: {BranchId},\n Name: {BranchName},\n Address: {Address},\n Phone: {Phone},\n Opening Hours: {OpeningHours},\n Manager: {Manager.Name},\nTotal Members: {_members.Count},\nTotal Book Copies: {_copies.Count}";
+            return $"Branch ID: {BranchId},\nName: {BranchName},\nAddress: {Address},\nPhone: {Phone},\nOpening Hours: {OpeningHours},\nManager: {Manager.Name},\nTotal Members: {_members.Count},\nTotal Book Copies: {_copies.Count}";
         }
     }
 }
